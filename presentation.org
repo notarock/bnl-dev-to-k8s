@@ -1,3 +1,37 @@
 #+TITLE: Dev to kubernetes
 
 * Service web
+On ne va pas se casser la tête.
+
+[[https://github.com/gin-gonic/gin#quick-start][Gin]]
+
+** Config par env var
+
+
+* Dockerfile
+** Format standard
+Open Container Initiative
+
+** Images "Officiels"
+[[https://hub.docker.com/search?type=image][Docker hub]]
+
+** Le Dockerfile
+#+attr_html: :alt  :align left :class img
+[[https://i.imgur.com/NMD2UG5.jpg][Anatomie d'une image Docker]]
+
+** Image registry
+
+[[https://hub.docker.com/repository/docker/notarock/bnl-dev-to-k8s]]
+
+
+* Kubernetes
+
+** Deployment
+
+** Service
+
+** Ingress
+
+*** Traffique entrant
+
+https://docs.nginx.com/nginx-ingress-controller/configuration/ingress-resources/basic-configuration/

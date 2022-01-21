@@ -1,0 +1,18 @@
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: webgo-ingress
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: webgo.k8s.notarock.xyz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: webgo
+                port:
+                  number: 8080

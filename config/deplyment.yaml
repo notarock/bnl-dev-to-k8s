@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webgo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webgo
+  template:
+    metadata:
+      labels:
+        app: webgo
+    spec:
+      containers:
+      - name: webgo
+        image: notarock/bnl-dev-to-k8s:v1.0.0
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        ports:
+        - containerPort: 8080

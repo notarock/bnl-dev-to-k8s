@@ -2,4 +2,4 @@
 
 with pkgs;
 
-mkShell { buildInputs = [ minikube kubectl helm ]; }
+mkShell { buildInputs = [ minikube kubectl kubernetes-helm ]; }
